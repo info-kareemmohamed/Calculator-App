@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.CalculatorApp" parent="Base.Theme.CalculatorApp" />
+    <!-- MainActivity. -->
+    <style name="main_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">20sp</item>
+        >
+    </style>
+
 </resources>

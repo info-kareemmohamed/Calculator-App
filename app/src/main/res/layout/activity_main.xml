@@ -15,7 +15,7 @@
         android:layout_margin="15dp"
         android:gravity="right"
         android:padding="10dp"
-        android:text="33+"
+        android:text=""
         android:textColor="@color/gray"
         android:textSize="30sp" />
 
@@ -28,7 +28,7 @@
         android:layout_marginRight="10dp"
         android:gravity="right"
         android:padding="10dp"
-        android:text="66"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="60sp" />
 
@@ -44,255 +44,162 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/c_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/option_bttn"
-            android:text="C"
+            android:text="AC"
             android:textColor="@color/black"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/change_operator_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/option_bttn"
             android:text="+/-"
             android:textColor="@color/black"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/mod_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/option_bttn"
             android:text="%"
             android:textColor="@color/black"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/division_bttn"
+            style="@style/main_style"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
             android:background="@drawable/operator_bttn"
             android:text="/"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/even_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="7"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="8"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="9"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/multiply_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/operator_bttn"
             android:text="X"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/four_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="4"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/five_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="5"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/six_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="6"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/minus_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/operator_bttn"
             android:text="-"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/one_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="1"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/two_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="2"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/three_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="3"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Plus_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/operator_bttn"
             android:text="+"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
+            style="@style/main_style"
             android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="@drawable/zero_bttn"
             android:text="0"
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/dot_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/number_bttn"
             android:text="."
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/equals_bttn"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
+            style="@style/main_style"
             android:background="@drawable/operator_bttn"
             android:text="="
             android:textColor="@color/white"
-            android:textSize="20sp"
             app:backgroundTint="@null" />
 
     </GridLayout>
