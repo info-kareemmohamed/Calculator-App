@@ -3,7 +3,9 @@ package com.example.calculatorapp
 
 import android.view.View
 import android.widget.Button
+import androidx.core.content.ContextCompat
 import com.example.calculatorapp.databinding.ActivityMainBinding
+import com.google.android.material.button.MaterialButton
 
 class Operator(private val binding: ActivityMainBinding) : View.OnClickListener {
     private var number1: Double = 0.0
@@ -43,8 +45,10 @@ class Operator(private val binding: ActivityMainBinding) : View.OnClickListener 
         if (binding.text1.text.toString() == "") number1 = number else number2 = number
 
         binding.text1.text = "$number1 $operator"
+        changeBackgroundOperator()
         if (!useOperator && number2 != null) {
             arithmeticOperations()
+
             binding.text1.text = "$result $operator"
             binding.text2.text = "${result.toString().replace(".0", "")}"
             number1 = result
@@ -60,6 +64,7 @@ class Operator(private val binding: ActivityMainBinding) : View.OnClickListener 
         } else {
             number2 = binding.text2.text.toString().toDouble()
             arithmeticOperations()
+
             binding.text1.text = "$number1 $operator $number2"
             binding.text2.text = "${result.toString().replace(".0", "")}"
             number1 = result
@@ -83,7 +88,42 @@ class Operator(private val binding: ActivityMainBinding) : View.OnClickListener 
     private fun clear() {
         result = 0.0;number1 = 0.0;number2 = null
         binding.text2.text = "0";binding.text1.text = ""
+        resetBackgroundAndTextColorOfAllButtons()
     }
 
+
+
+    private fun setButtonAppearance(button: MaterialButton, isSelected: Boolean) {
+        val backgroundResource = if (isSelected) R.drawable.selected_bttn_operator else R.drawable.operator_bttn
+        val textColor = if (isSelected) R.color.orange else R.color.white
+
+        button.setBackgroundResource(backgroundResource)
+        button.setTextColor(ContextCompat.getColor(binding.root.context, textColor))
+    }
+
+    private fun changeBackgroundOperator() {
+        resetBackgroundAndTextColorOfAllButtons()
+        when (operator) {
+            "+" -> setButtonAppearance(binding.PlusBttn, isSelected = true)
+            "-" -> setButtonAppearance(binding.minusBttn, isSelected = true)
+            "X" -> setButtonAppearance(binding.multiplyBttn, isSelected = true)
+            "/" -> setButtonAppearance(binding.divisionBttn, isSelected = true)
+            "%" -> setButtonAppearance(binding.modBttn, isSelected = true)
+        }
+    }
+
+    private fun resetBackgroundAndTextColorOfAllButtons() {
+        val buttons = listOf(
+            binding.PlusBttn,
+            binding.minusBttn,
+            binding.multiplyBttn,
+            binding.divisionBttn,
+            binding.modBttn
+        )
+
+        buttons.forEach { button ->
+            setButtonAppearance(button, isSelected = false)
+        }
+    }
 
 }
